@@ -86,9 +86,9 @@ function displayQuestions(questionIndex) {
             welcomeScreen.appendChild(olCreate);
             olCreate.appendChild(listItem);
             listItem.addEventListener("click", (compare));
-        });
-    
+        }); 
     };
+    // 
 
 };
 
