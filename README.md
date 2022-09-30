@@ -10,10 +10,10 @@ The quiz had to be able to record user selections, time the user and give a fina
 ## Usage
 
 Deployed application:  
-https://biscuit231.github.io/Password-Generator/ 
+https://biscuit231.github.io/Coding-Quiz-Challenge/
 
 
-![Screenshot of live site.](./assets/Images/passGenPic.png)
+![Screenshot of live site.](./Assets/Images/ScrrenShot.png)
 
 ## Credits
 

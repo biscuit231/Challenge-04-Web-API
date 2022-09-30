@@ -20,5 +20,5 @@ if (allScores !== null) {
 }
 // Event listener to move back to homePage
 goBack.addEventListener("click", function () {
-    window.location.replace("file:///F:/Full%20Stack/Challenges/Challenge04-Web-API/index.html");
+    window.location.replace("https://biscuit231.github.io/Coding-Quiz-Challenge/");
 });

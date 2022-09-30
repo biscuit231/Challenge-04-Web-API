@@ -74,18 +74,21 @@ startQuiz.addEventListener("click", function() {
 function displayQuestions(questionIndex) {
     olCreate.innerHTML = '';
     welcomeScreen.classList.remove("hide");
+    var currentQuestion = questions[questionIndex];
     for (var i = 0; i < questions.length; i++) {
-        var userQuestion = questions[questionIndex].question;
-        var userChoices = questions[questionIndex].choices;
-        welcomeScreen.innerHTML = userQuestion;
+        // var userQuestion = questions[i].question;
+        var userChoices = currentQuestion.choices[i];
+        welcomeScreen.innerHTML = questions[questionIndex].question;
+
+        userChoices.forEach(function (newItem) {
+            var listItem = document.createElement("li");
+            listItem.innerHTML = newItem;
+            welcomeScreen.appendChild(olCreate);
+            olCreate.appendChild(listItem);
+            listItem.addEventListener("click", (compare));
+        });
+    
     };
-    userChoices.forEach(function (newItem) {
-        var listItem = document.createElement("li");
-        listItem.innerHTML = newItem;
-        welcomeScreen.appendChild(olCreate);
-        olCreate.appendChild(listItem);
-        listItem.addEventListener("click", (compare));
-    });
 
 };
 
